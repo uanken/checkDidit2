@@ -76,17 +76,23 @@ namespace checkDigit2
             "9.999999",
             "12345678",
             "00.0012345",
-            "99999999",
-            "99999999.9",
-            "999999.9",
-            ".999999",
+            "99999999.99",
+            "9999999.999",
+            "999999.9999",
+            "99999.99999",
+            "999999999.99",
+            "90000001.999",
+            "90000001.9999",
+            "90000001.99999",
+            "90000001.999999",
+            "90000001.9999999",
             };
 
-            Console.WriteLine("--- OK --");
-            foreach (var item in ok_tests)
-            {
-                Console.WriteLine(Format7strKIRISUTE(item));
-            }
+            //Console.WriteLine("--- OK --");
+            //foreach (var item in ok_tests)
+            //{
+            //    Console.WriteLine(Format7strKIRISUTE(item));
+            //}
             Console.WriteLine("--- NG --");
             foreach (var item in err_tests)
             {
@@ -98,6 +104,7 @@ namespace checkDigit2
         {
             // 前の０を吹き飛ばす
             double val = double.Parse(str);
+            // 上位桁切り捨て
             if (val >= 1000000)
             {
                 val %= 10000000;
@@ -107,8 +114,9 @@ namespace checkDigit2
                 val %= 1000000;
             }
             // ７文字化
-            string str2 = Format7str(val.ToString("0.#########"));
+            string str2 = Format7str2(val.ToString("0.#########"));
             val = double.Parse(str2);
+            // 上位桁切り捨て 繰り上がりが発生した場合の対応
             if (val >= 1000000)
             {
                 val %= 10000000;
@@ -167,7 +175,7 @@ namespace checkDigit2
             else
             {
                 val = Math.Round(val, 0, MidpointRounding.AwayFromZero);
-                str = string.Format("{0}", val);
+                str = string.Format("{0:0}", val);
             }
             return str;
         }
@@ -207,7 +215,7 @@ namespace checkDigit2
             //else if (pos == 6) // 100000. or 10000000...
             else
             {
-                str = string.Format("{0}", val);
+                str = string.Format("{0:0}", val);
             }
             return str;
         }

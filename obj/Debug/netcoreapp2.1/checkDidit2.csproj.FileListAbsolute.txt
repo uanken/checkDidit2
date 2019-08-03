@@ -1,0 +1,11 @@
+C:\Users\uaken\Source\Repos\checkDigit\checkDidit2\bin\Debug\netcoreapp2.1\checkDidit2.deps.json
+C:\Users\uaken\Source\Repos\checkDigit\checkDidit2\bin\Debug\netcoreapp2.1\checkDidit2.runtimeconfig.json
+C:\Users\uaken\Source\Repos\checkDigit\checkDidit2\bin\Debug\netcoreapp2.1\checkDidit2.runtimeconfig.dev.json
+C:\Users\uaken\Source\Repos\checkDigit\checkDidit2\bin\Debug\netcoreapp2.1\checkDidit2.dll
+C:\Users\uaken\Source\Repos\checkDigit\checkDidit2\bin\Debug\netcoreapp2.1\checkDidit2.pdb
+C:\Users\uaken\Source\Repos\checkDigit\checkDidit2\obj\Debug\netcoreapp2.1\checkDidit2.csproj.CoreCompileInputs.cache
+C:\Users\uaken\Source\Repos\checkDigit\checkDidit2\obj\Debug\netcoreapp2.1\checkDidit2.AssemblyInfoInputs.cache
+C:\Users\uaken\Source\Repos\checkDigit\checkDidit2\obj\Debug\netcoreapp2.1\checkDidit2.AssemblyInfo.cs
+C:\Users\uaken\Source\Repos\checkDigit\checkDidit2\obj\Debug\netcoreapp2.1\checkDidit2.dll
+C:\Users\uaken\Source\Repos\checkDigit\checkDidit2\obj\Debug\netcoreapp2.1\checkDidit2.pdb
+C:\Users\uaken\Source\Repos\checkDigit\checkDidit2\obj\Debug\netcoreapp2.1\checkDidit2.csprojAssemblyReference.cache
